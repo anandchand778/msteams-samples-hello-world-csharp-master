@@ -27,15 +27,15 @@
             "apiVersion": "2018-11-01",
             "location": "[resourceGroup().location]",
             "tags": {
-                "[concat('hidden-related:', resourceGroup().id, '/providers/Microsoft.Web/serverfarms/appServicePlan1')]": "Resource",
+                "[concat('hidden-related:', resourceGroup().id, '/providers/Microsoft.Web/serverfarms/msteams-samples-hello-world-csharp-master')]": "Resource",
                 "displayName": "msteams-samples-hello-world-csharp-master123"
             },
             "dependsOn": [
-                "[resourceId('Microsoft.Web/serverfarms', 'appServicePlan1')]"
+                "[resourceId('Microsoft.Web/serverfarms', 'msteams-samples-hello-world-csharp-master')]"
             ],
             "properties": {
                 "name": "msteams-samples-hello-world-csharp-master123",
-                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', 'appServicePlan1')]"
+                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', 'msteams-samples-hello-world-csharp-master')]"
             }
         }
     ],
