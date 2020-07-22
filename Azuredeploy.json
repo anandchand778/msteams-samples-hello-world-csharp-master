@@ -49,9 +49,7 @@
               }
           ]
       },
-      "resources": [
-          "<array-of-child-resources>"
-      ]
+     
   }
 {
       "type": sites
@@ -96,10 +94,7 @@
               }
           ]
       },
-      "resources": [
-          "<array-of-child-resources>"
-      ]
-  }
+        }
 ],
   "outputs": {  }
 }
