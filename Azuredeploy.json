@@ -6,7 +6,7 @@
     "variables": {},
     "resources": [
         {
-            "name": "appServicePlan1",
+            "name": "msteams-samples-hello-world-csharp-master",
             "type": "Microsoft.Web/serverfarms",
             "apiVersion": "2018-02-01",
             "location": "[resourceGroup().location]",
@@ -15,26 +15,26 @@
                 "capacity": 1
             },
             "tags": {
-                "displayName": "appServicePlan1"
+                "displayName": "msteams-samples-hello-world-csharp-master"
             },
             "properties": {
-                "name": "appServicePlan1"
+                "name": "msteams-samples-hello-world-csharp-master"
             }
         },
         {
-            "name": "msteams-samples-hello-world-csharp-master",
+            "name": "msteams-samples-hello-world-csharp-master123",
             "type": "Microsoft.Web/sites",
             "apiVersion": "2018-11-01",
             "location": "[resourceGroup().location]",
             "tags": {
                 "[concat('hidden-related:', resourceGroup().id, '/providers/Microsoft.Web/serverfarms/appServicePlan1')]": "Resource",
-                "displayName": "msteams-samples-hello-world-csharp-master"
+                "displayName": "msteams-samples-hello-world-csharp-master123"
             },
             "dependsOn": [
                 "[resourceId('Microsoft.Web/serverfarms', 'appServicePlan1')]"
             ],
             "properties": {
-                "name": "msteams-samples-hello-world-csharp-master",
+                "name": "msteams-samples-hello-world-csharp-master123",
                 "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', 'appServicePlan1')]"
             }
         }
